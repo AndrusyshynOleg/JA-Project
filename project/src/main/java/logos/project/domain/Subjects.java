@@ -1,0 +1,5 @@
+package logos.project.domain;
+
+public enum Subjects {
+	MATH, HISTORY, ENGLISH, MARKETING, PSYCHOLOGY, CHEMISTRY, LAW, PHISICS, PROGRAMING, BIOLOGY, ENGINEERING 
+}
