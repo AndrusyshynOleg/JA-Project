@@ -1,5 +1,5 @@
 package logos.project.domain;
 
 public enum UserRole {
-	ADMIN, ENTRANT;
+	ROLE_ADMIN, ROLE_USER;
 }
