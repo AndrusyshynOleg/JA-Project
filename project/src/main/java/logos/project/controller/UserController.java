@@ -9,7 +9,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
 
-import logos.project.domain.Entrant;
 import logos.project.domain.User;
 import logos.project.service.EntrantService;
 import logos.project.service.UserService;
@@ -64,8 +63,8 @@ public class UserController {
     }
     
     @RequestMapping(value ="/create-entrant", method = RequestMethod.GET)
-    public ModelAndView createEntrant() {
-        return new ModelAndView("createEntrant", "entrant", new Entrant());
+    public String createEntrant() {
+        return "createEntrant";
     }
 
 

@@ -10,6 +10,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.JoinColumn;
+import javax.persistence.Lob;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 
@@ -33,6 +34,9 @@ public class Entrant {
 	@Column( name="Subjects", nullable=false ) 
 	private List<Subjects> subjects;
 
+	@Lob
+	private String encodedImage;
+	
 	public Entrant() {
 		super();
 	}
@@ -92,6 +96,14 @@ public class Entrant {
 
 	public void setSubjects(List<Subjects> subjects) {
 		this.subjects = subjects;
+	}
+
+	public String getEncodedImage() {
+		return encodedImage;
+	}
+
+	public void setEncodedImage(String encodedImage) {
+		this.encodedImage = encodedImage;
 	}
 
 	@Override
